@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>mikrotik hotspot > advertisement</title>
+<meta http-equiv="refresh" content="50; url=http://www.google.com"> <!-- Cambiado a la URL de Google -->
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="expires" content="-1">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="shortcut icon" type="image/png" href="kiwi.svg"/>
+<link rel="stylesheet" type="text/css" media="all" href="packages/bootstrap/bootstrap.css">
+<link rel="stylesheet" type="text/css" media="all" href="css/theme.css">
+<script language="JavaScript">
+<!--
+    var popup = '';
+    function openOrig() {
+	if (window.focus) popup.focus();
+	location.href = 'http://www.google.com'; // Cambiado a la URL de Google
+    }
+    function openAd() {
+	location.href = 'http://www.google.com'; // Cambiado a la URL de Google
+    }
+    function openAdvert() {
+	if (window.name != 'hotspot_advert') {
+		popup = open('http://www.google.com', 'hotspot_advert', ''); // Cambiado a la URL de Google
+		setTimeout(openOrig, 5000); // Cambiado a 5000 milisegundos (5 segundos)
+
+		return;
+	}
+	setTimeout("openAd()", 5000); // Cambiado a 5000 milisegundos (5 segundos)
+}
+//-->
+</script>
+</head>
+<body onLoad="openAdvert()" style="background-image:url(img/bg.jpg);">
+<section class "login-wrap">
+    <div class="login-box card">
+        <div class="card-body">
+            <a href="http://www.google.com" class="text-center d-block mb-3"> <!-- Cambiado a la URL de Google -->
+                <img src="img/logo.png" alt="Home" height="100" />
+            </a>
+            <div class="row">
+            	<div class="col-md-12 text-center">
+		            <p class="mb-0">Bienvenido a KingoNet</p>
+		        </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="packages/bootstrap/libraries/tether.js"></script>
+<script type="text/javascript" src="packages/bootstrap/libraries/popper.js"></script>
+<script type="text/javascript" src="packages/bootstrap/bootstrap.js"></script>
+</body>
+</html>
